@@ -13,7 +13,7 @@ It is a plugin repo, not an MCP server. Optionally it can pull in
 |---|---|
 | `auto-edit` skill | Cut silences from a recording, show the cuts, render a verified draft |
 | `auto-short` skill | Same, plus a centered 9:16 crop (1080x1920) for reels and Shorts |
-| `/auto-edit` command | Shortcut: `/auto-edit path/to/video.mp4 make it a vertical short` |
+| `/auto-edit-kit:auto-edit` command | Shortcut: `/auto-edit-kit:auto-edit path/to/video.mp4 make it a vertical short` |
 | `aek` CLI | `doctor`, `setup`, `probe`, `silences`, `plan`, `render`, `run` |
 
 Zero npm dependencies. Needs Node.js 22+, FFmpeg and ffprobe. Chrome is only needed if you later use
@@ -28,11 +28,21 @@ As a Claude Code plugin (replace `YOUR-USER` with your GitHub name after you pus
 /plugin install auto-edit-kit@auto-edit-kit
 ```
 
-Or try it locally without publishing:
+Or install it from a local folder, no GitHub needed:
+
+```
+claude plugin marketplace add ./auto-edit-kit
+claude plugin install auto-edit-kit@auto-edit-kit
+```
+
+Or load it for a single session only:
 
 ```
 claude --plugin-dir ./auto-edit-kit
 ```
+
+Plugin commands are namespaced, so the command is `/auto-edit-kit:auto-edit`. Edits to the folder apply
+at the next session start or after `/reload-plugins`.
 
 Then check your machine:
 
@@ -45,8 +55,8 @@ node scripts/aek.mjs doctor
 In Claude Code:
 
 ```
-/auto-edit ~/Videos/recording.mp4
-/auto-edit ~/Videos/recording.mp4 make it a vertical short, tight pacing
+/auto-edit-kit:auto-edit ~/Videos/recording.mp4
+/auto-edit-kit:auto-edit ~/Videos/recording.mp4 make it a vertical short, tight pacing
 ```
 
 Or run the CLI directly:

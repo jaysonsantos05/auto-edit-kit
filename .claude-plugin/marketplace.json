@@ -1,5 +1,6 @@
 {
   "name": "auto-edit-kit",
+  "description": "Auto-editing toolkit for Claude Code: silence cutting, edit lists and draft renders.",
   "owner": {
     "name": "auto-edit-kit contributors"
   },
