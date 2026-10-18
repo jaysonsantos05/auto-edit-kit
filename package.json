@@ -1,0 +1,19 @@
+{
+  "name": "auto-edit-kit",
+  "version": "0.1.0",
+  "description": "Auto-editing toolkit CLI and Claude Code plugin",
+  "type": "module",
+  "license": "MIT",
+  "private": true,
+  "bin": {
+    "aek": "scripts/aek.mjs"
+  },
+  "scripts": {
+    "doctor": "node scripts/aek.mjs doctor",
+    "setup": "node scripts/aek.mjs setup",
+    "test": "node --test \"tests/*.test.mjs\""
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "auto-edit-kit",
+  "owner": {
+    "name": "auto-edit-kit contributors"
+  },
+  "plugins": [
+    {
+      "name": "auto-edit-kit",
+      "source": "./",
+      "description": "Auto-editing toolkit: cut silences, plan edits, render drafts. Optional Herk Edit Kit integration."
+    }
+  ]
+}

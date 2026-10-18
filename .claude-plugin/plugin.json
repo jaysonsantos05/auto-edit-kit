@@ -1,0 +1,10 @@
+{
+  "name": "auto-edit-kit",
+  "version": "0.1.0",
+  "description": "Auto-editing toolkit for Claude Code: silence cutting, edit lists, and reviewed renders with FFmpeg, plus optional Herk Edit Kit integration for captions and motion graphics.",
+  "author": {
+    "name": "auto-edit-kit contributors"
+  },
+  "license": "MIT",
+  "keywords": ["video-editing", "ffmpeg", "reels", "shorts", "silence-cutting"]
+}

@@ -1,0 +1,11 @@
+node_modules/
+vendor/
+.env
+renders/
+work/
+raw-media/
+*.mp4
+*.mov
+*.mkv
+*.wav
+.DS_Store
