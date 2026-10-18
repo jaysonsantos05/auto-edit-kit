@@ -21,10 +21,10 @@ Herk Edit Kit's HyperFrames motion graphics.
 
 ## Install
 
-As a Claude Code plugin (replace `YOUR-USER` with your GitHub name after you push the repo):
+As a Claude Code plugin, once the repo is on GitHub:
 
 ```
-/plugin marketplace add YOUR-USER/auto-edit-kit
+/plugin marketplace add jaysonsantos05/auto-edit-kit
 /plugin install auto-edit-kit@auto-edit-kit
 ```
 
