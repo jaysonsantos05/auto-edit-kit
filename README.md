@@ -50,6 +50,19 @@ Then check your machine:
 node scripts/aek.mjs doctor
 ```
 
+### Windows notes
+
+- Install FFmpeg and make sure `ffmpeg -version` and `ffprobe -version` both work in a new terminal. If
+  they don't, add the folder that contains `ffmpeg.exe` to your PATH.
+- Use full paths when adding the marketplace:
+
+```
+claude plugin marketplace add C:\Users\you\Documents\auto-edit-kit
+claude plugin install auto-edit-kit@auto-edit-kit
+```
+
+- If Claude says it cannot find `aek.mjs`, tell it to run `node scripts/aek.mjs` from the repo folder.
+
 ## Use it
 
 In Claude Code:
